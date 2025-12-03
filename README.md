@@ -1,4 +1,4 @@
-# Host Stock Monitor
+# CF Stock Monitor
 
 <div align="center">
 
@@ -56,8 +56,8 @@
 npm install -g wrangler
 
 克隆项目
-git clone https://github.com/helloyangy/host-stock-monitor.git
-cd host-stock-monitor
+git clone https://github.com/helloyangy/cf-stock-monitor.git
+cd cf-stock-monitor
 
 登录 Cloudflare
 wrangler login
@@ -68,7 +68,6 @@ wrangler kv:namespace create STOCK_KV
 部署 Worker
 wrangler deploy
 
-text
 
 #### 方法二：通过 Cloudflare Dashboard
 
@@ -107,7 +106,6 @@ text
 */10 * * * * # 每 10 分钟执行一次
 0 * * * * # 每小时执行一次
 
-text
 
 ---
 
@@ -128,7 +126,6 @@ description: "HostDZire 32刀闪购补货了。", // 通知文案
 // 添加更多目标...
 ];
 
-text
 
 ### 示例：常见主机商配置
 
@@ -159,7 +156,6 @@ outOfStockText: "this service is not available",
 description: "Colocrossing E3-2124G 有货了。",
 }
 
-text
 
 ---
 
@@ -179,7 +175,6 @@ text
 
 https://your-worker.your-subdomain.workers.dev/?force=1
 
-text
 
 此模式会**强制发送所有有货目标的通知**，用于调试或立即查看当前库存状态。
 
@@ -189,7 +184,6 @@ text
 
 https://your-worker.your-subdomain.workers.dev/
 
-text
 
 会显示一个简单的状态页面，确认 Worker 正在运行。
 
@@ -209,8 +203,6 @@ text
 
 🔗 https://www.dmit.io/cart.php?...
 
-text
-
 ---
 
 ## KV 数据结构
@@ -226,7 +218,6 @@ Worker 使用 KV 存储每个目标的状态：
 "lastNotified": 1701619200000 // 上次通知时间（毫秒时间戳）
 }
 
-text
 
 ---
 
