@@ -34,18 +34,11 @@ const TARGETS = [
     description: "HostDZire 32刀闪购补货了。",
   },
   {
-    id: "dmit_special",
-    name: "DMIT Special",
-    url: "https://example.com/dmit-link",
-    outOfStockText: "out of stock",
-    description: "DMIT 补货了。",
-  },
-  {
-    id: "bwg_la_kvm",
-    name: "搬瓦工 LA KVM",
-    url: "https://example.com/bwg-buy-link",
-    outOfStockText: "out of stock",
-    description: "搬瓦工补货了。",
+    id: "bwg_112",
+    name: "搬瓦工 PID 112",
+    url: "https://bandwagonhost.com/cart.php?a=add&pid=112",
+    outOfStockText: "out of stock",  
+    description: "搬瓦工 PID 112 补货了。",
   },
   {
     id: "colocrossing_e3",
@@ -55,6 +48,7 @@ const TARGETS = [
     description: "Colocrossing E3-2124G 有货了。",
   },
 ];
+
 
 // 简单的 fetch 超时封装
 async function fetchWithTimeout(url, opts = {}, timeout = 10000) {
