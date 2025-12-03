@@ -11,6 +11,7 @@
 
 </div>
 
+详细部署教程：https://mp.weixin.qq.com/s/dhNRuTjKUhmcGxJDfpkyOw
 ---
 
 ## 功能特点
